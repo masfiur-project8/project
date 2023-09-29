@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project Board</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <template id="tooltip">
+      <h2>More Info</h2>
+      <p></p>
+    </template>
+    <header id="main-header">
+      <h1>Projects</h1>
+    </header>
+    <section id="active-projects">
+      <header>
+        <h2>Active Projects</h2>
+      </header>
+      <ul>
+        <li
+          id="p1"
+          data-extra-info="Don't forget to stock up on fresh produce, pantry staples, and household supplies."
+          class="card"
+          draggable="true"
+        >
+          <h2>Grocery Shopping</h2>
+          <p>Make Don't forget to stock up on fresh produce, pantry staples, and household supplies.</p>
+          <button class="alt">More Info</button>
+          <button>Finish</button>
+        </li>
+        <li
+          id="p2"
+          data-extra-info="Review lecture notes, textbooks, and any additional study materials to ensure a thorough understanding of the subject matter."
+          class="card"
+          draggable="true"
+        >
+          <h2>Study for Exam</h2>
+          <p>Set aside dedicated study time for an upcoming exam.</p>
+          <button class="alt">More Info</button>
+          <button>Finish</button>
+        </li>
+      </ul>
+    </section>
+    <section id="finished-projects">
+      <header>
+        <h2>Finished Projects</h2>
+      </header>
+      <ul>
+        <li
+          id="p3"
+          data-extra-info="Whether it's hitting the gym, going for a run outdoors, or following a home workout routine, prioritize physical activity to stay active and maintain a healthy lifestyle."
+          class="card"
+          draggable="true"
+        >
+          <h2>Exercise Routine</h2>
+          <p>
+            Plan and schedule regular workout sessions.
+          </p>
+          <button class="alt">More Info</button>
+          <button>Activate</button>
+        </li>
+      </ul>
+    </section>
+    <footer>
+
+    </footer>
+  </body>
+</html>
